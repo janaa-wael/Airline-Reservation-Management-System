@@ -7,6 +7,11 @@ bool Flight::checkAvailability()
     return availableSeats > 0;
 }
 
+int Flight::getFlightNumber() const
+{
+    return id;
+}
+
 void Flight::reserveSeat()
 {
     if (checkAvailability()) {

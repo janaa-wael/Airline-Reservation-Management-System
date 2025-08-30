@@ -1,10 +1,10 @@
 #include <iostream>
 #include <vector>
 #include "User.hpp"
-#include "Reservation.hpp"
 #include "Flight.hpp"
 using namespace std;
 
+class Reservation;
 class Passenger : public User{
 private:
     string passportNum;
@@ -15,8 +15,7 @@ public:
     void logout() override;
     void displayMenu() override;
     void viewFlights();
-    Reservation bookFlight(Flight f);
+    Reservation bookFlight(Flight& f);
     void cancelReservation(int reservationId);
     void viewMyReservations();
-
 };

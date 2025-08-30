@@ -11,6 +11,8 @@ private:
     string status; //Confirmed, Cancelled, Pending
 
 public:
+    void setPassenger(const Passenger& p);
+    void setFlight(const Flight& f);
     void confirm();
     void cancel();
     void displayReservationInfo();

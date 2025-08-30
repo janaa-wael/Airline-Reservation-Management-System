@@ -15,7 +15,9 @@ private:
     int availableSeats;
 public:
     bool checkAvailability();
+    int getFlightNumber() const;
     void reserveSeat();
     void cancelSeat();
     void displayFlightInfo();
+
 };
