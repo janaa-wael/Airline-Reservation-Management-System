@@ -1,0 +1,17 @@
+#include <iostream>
+#include "Passenger.hpp"
+using namespace std;
+
+class Reservation{
+private:
+    int id;
+    Passenger passenger;
+    Flight flight;
+    int seatNo;
+    string status; //Confirmed, Cancelled, Pending
+
+public:
+    void confirm();
+    void cancel();
+    void displayReservationInfo();
+};
