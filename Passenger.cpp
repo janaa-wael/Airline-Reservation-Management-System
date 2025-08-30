@@ -43,10 +43,19 @@ Reservation Passenger::bookFlight(Flight& f)
 
 void Passenger::cancelReservation(int reservationId)
 {
-
+    auto it = find_if(reservations.begin(), reservations.end(), [reservationId](const Reservation& r) {
+        return r.getId() == reservationId;
+    });
+    if (it != reservations.end()) {
+        it->getFlight().cancelSeat();
+        reservations.erase(it);
+    }
 }
 
 void Passenger::viewMyReservations()
 {
-
+    for(auto r : reservations)
+    {
+        r.displayReservationInfo();
+    }
 }

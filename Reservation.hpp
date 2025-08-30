@@ -13,6 +13,8 @@ private:
 public:
     void setPassenger(const Passenger& p);
     void setFlight(const Flight& f);
+    Flight& getFlight();
+    int getId() const;
     void confirm();
     void cancel();
     void displayReservationInfo();

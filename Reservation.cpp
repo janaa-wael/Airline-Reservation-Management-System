@@ -13,6 +13,16 @@ void Reservation::setFlight(const Flight& f)
     this->flight = f;
 }
 
+Flight& Reservation::getFlight()
+{
+    return this->flight;
+}
+
+int Reservation::getId() const
+{
+    return this->id;
+}
+
 void Reservation::confirm()
 {
     this->status = "Confirmed";
