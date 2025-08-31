@@ -8,6 +8,7 @@ using namespace std;
 class Agent : public User{
 private:
     string agencyName;
+    vector<Flight> availableFlights;
 public:
     bool login(string username, string password) override;
     void logout() override;

@@ -25,7 +25,7 @@ void Flight::cancelSeat()
     availableSeats++;
 }
 
-void Flight::displayFlightInfo()
+void Flight::displayFlightInfo() const
 {
     cout << "Flight Number: " << id << endl;
     cout << "Origin: " << source << endl;

@@ -25,7 +25,10 @@ void displayMenu()
 
 void Agent::viewFlights()
 {
-    
+    cout << "Available Flights:" << endl;
+    for (const auto& flight : availableFlights) {
+        flight.displayFlightInfo();
+    }
 }
 
 Reservation Agent::makeBookingForPassenger(Passenger p, Flight f)

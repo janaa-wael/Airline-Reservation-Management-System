@@ -11,7 +11,5 @@ public:
     void displayMenu() override;
     void addFlight(Flight f);
     void removeFlight(int flightId);
-    void addAircraft(Aircraft a);
-    void removeAircraft(int aircraftId);
-    void viewReports();
+    
 };

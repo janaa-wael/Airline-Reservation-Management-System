@@ -24,13 +24,6 @@ void Passenger::displayMenu()
     cout << "5. Logout" << endl;
 }
 
-void Passenger::viewFlights()
-{
-    for(auto r : reservations)
-    {
-        r.displayReservationInfo();
-    }
-}
 Reservation Passenger::bookFlight(Flight& f)
 {
     f.reserveSeat();

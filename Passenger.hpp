@@ -14,7 +14,6 @@ public:
     bool login(string username, string password) override;
     void logout() override;
     void displayMenu() override;
-    void viewFlights();
     Reservation bookFlight(Flight& f);
     void cancelReservation(int reservationId);
     void viewMyReservations();

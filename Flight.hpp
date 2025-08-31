@@ -18,6 +18,6 @@ public:
     int getFlightNumber() const;
     void reserveSeat();
     void cancelSeat();
-    void displayFlightInfo();
+    void displayFlightInfo() const;
 
 };
