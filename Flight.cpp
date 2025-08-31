@@ -24,7 +24,10 @@ void Flight::cancelSeat()
 {
     availableSeats++;
 }
-
+void Flight::addCrew(const Crew& member)
+{
+    crew.push_back(member);
+}
 void Flight::displayFlightInfo() const
 {
     cout << "Flight Number: " << id << endl;
@@ -33,4 +36,8 @@ void Flight::displayFlightInfo() const
     cout << "Departure Time: " << departureTime << endl;
     cout << "Arrival Time: " << arrivalTime << endl;
     cout << "Available Seats: " << availableSeats << endl;
+    cout << "Crew Members: " << endl;
+    for (const auto& member : crew) {
+        member.displayInfo();
+    }
 }
