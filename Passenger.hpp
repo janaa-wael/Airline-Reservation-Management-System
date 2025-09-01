@@ -11,8 +11,6 @@ private:
     string contactInfo;
     vector<Reservation> reservations;
 public:
-    bool login(string username, string password) override;
-    void logout() override;
     void displayMenu() override;
     Reservation bookFlight(Flight& f);
     void cancelReservation(int reservationId);

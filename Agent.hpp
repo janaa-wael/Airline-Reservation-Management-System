@@ -10,8 +10,6 @@ private:
     string agencyName;
     vector<Flight> availableFlights;
 public:
-    bool login(string username, string password) override;
-    void logout() override;
     void displayMenu() override;
     void viewFlights();
     Reservation makeBookingForPassenger(Passenger p, Flight f);

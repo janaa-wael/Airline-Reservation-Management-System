@@ -34,3 +34,15 @@ void User::setPassword(const string& password)
 {
     this->password = password;
 }
+bool User::login(string username, string password) 
+{
+    return username == this->getUsername() && password == this->getPassword();
+}
+
+void User::logout()
+{
+    cout << "User " << this->getUsername() << " logged out." << endl;
+    // Perform logout actions
+    this->setUsername("");
+    this->setPassword("");
+}

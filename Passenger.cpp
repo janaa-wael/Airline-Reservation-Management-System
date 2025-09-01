@@ -4,16 +4,7 @@
 #include "Passenger.hpp"
 using namespace std;
 
-bool Passenger::login(string username, string password) 
-{
-    return username == this->getUsername() && password == this->getPassword();
-}
-void Passenger::logout() 
-{
-    // Clear session data
-    this->setUsername("");
-    this->setPassword("");
-}
+
 
 void Passenger::displayMenu() 
 {
